@@ -1,0 +1,6 @@
+// small devices - 576px
+@mixin sm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
