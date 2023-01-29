@@ -1,2 +1,42 @@
 @import "styles/variables.scss";
-@import "styles/breakpoints";
+@import "styles/breakpoints.scss";
+
+.button {
+    display: flex;
+    align-items: center;
+    font-stretch: normal;
+    text-align: center;
+    font-family: $font-main;
+    cursor: pointer;
+    height: 48px;
+    padding: 20px;
+    border: 0;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.small {
+    height: 38px;
+    font-size: 14px;
+}
+.big {
+    height: 56px;
+    font-size: 18px;
+}
+
+.buttonDefault__Primary {
+}
+
+.buttonDefault__Secondary {
+}
+
+.buttonDefault__Tertiary {
+    background: transparent;
+    font-weight: 600;
+    &:hover {
+        background-color: $color-blue;
+        color: $color-white;
+        border-radius: 50px;
+        transition: background 0.5s;
+    }
+}

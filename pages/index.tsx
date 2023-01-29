@@ -1,8 +1,13 @@
+import PageLayout from "components/molecules/PageLayout";
+import Hero from "components/organism/Hero";
 import { NextPage } from "next";
-import NavBar from "components/molecules/NavBar";
 
 const Home: NextPage = () => {
-    return <NavBar />;
+    return (
+        <PageLayout>
+            <Hero />
+        </PageLayout>
+    );
 };
 
 export default Home;
