@@ -1,5 +1,5 @@
 import { FC } from "react";
-import style from "./heroImage.module.scss";
+import style from "../HeroImage/heroImage.module.scss";
 import backgroundImg from "../../../../../public/icon/background.jpeg";
 import Image from "next/legacy/image";
 
