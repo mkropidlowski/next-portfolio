@@ -1,0 +1,16 @@
+@import "styles/variables.scss";
+@import "styles/breakpoints.scss";
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    scroll-margin-top: 80px;
+    .sectionHeading {
+        font-size: 60px;
+        text-align: center;
+        margin: 50px 0 60px;
+    }
+}

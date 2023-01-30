@@ -4,7 +4,7 @@ import Linkedin from "../../public/icon/linkedin.png";
 
 export const menuLinks = {
     home: {
-        id: "home",
+        id: "",
         text: "Home",
     },
     about: {
