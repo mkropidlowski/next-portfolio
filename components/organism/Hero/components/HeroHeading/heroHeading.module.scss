@@ -16,5 +16,10 @@
         line-height: normal;
         letter-spacing: 1px;
         text-align: left;
+        background-image: linear-gradient(#0755db, #271d20);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
     }
 }
