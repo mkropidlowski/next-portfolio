@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Heading from "components/atoms/Heading";
 import { FC, HTMLProps } from "react";
-import style from "../HeroHeading/heroHeading.module.scss";
+import style from "./heroHeading.module.scss";
 
 interface Props {}
 
