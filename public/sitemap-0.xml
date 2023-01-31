@@ -7,7 +7,7 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
     xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
-        <loc>https:/mkropidlowski.pl</loc>
+        <loc>https://mkropidlowski.pl</loc>
             <lastmod>2023-01-31T15:57:18.199Z</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.7</priority>
