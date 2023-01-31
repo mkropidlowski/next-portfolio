@@ -13,6 +13,7 @@
     border: 0;
     line-height: 24px;
     font-size: 16px;
+    border-radius: 30px;
 }
 
 .small {
@@ -25,6 +26,15 @@
 }
 
 .buttonDefault__Primary {
+    background: $color-green;
+    color: $color-white;
+    font-weight: 600;
+    letter-spacing: 0.5;
+    &:hover {
+        background: $color-green-light;
+        color: $color-white;
+        transition: background 0.7s;
+    }
 }
 
 .buttonDefault__Secondary {
@@ -34,7 +44,7 @@
     background: transparent;
     font-weight: 600;
     &:hover {
-        background-color: $color-blue;
+        background: $color-blue;
         color: $color-white;
         border-radius: 50px;
         transition: background 0.5s;

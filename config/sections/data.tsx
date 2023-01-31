@@ -1,3 +1,4 @@
+import { Code } from "components/icons";
 import { SectionProps } from "components/molecules/Section/types";
 import { menuLinks } from "config/navbar/data";
 
@@ -7,10 +8,12 @@ export const SectionsContent: SectionProps[] = [
         id: about.id,
         heading: "O mnie",
         columnContent: {
-            columnHeading: "Column Heading _ o mnie",
-            description: "OPIS OPIS O mnie",
+            columnHeading: "Junior Front-End Developer",
+            description:
+                "Cześć, nazywam się Michał Kropidłowski, zajmuję się tworzeniem stron internetowych, blogów, portolio czy te małych aplikacji do zarządania zasobami w Twoim biznensie. Jeśli chcesz posiadać własną stronę WWW bedącą reklamą lub prezentacją Twojego biznesu, skontaktuj się ze mną w celu omówienia szczegółów.",
+            buttonPrimary: "Skontaktuj się po przez formularz!",
         },
-        visualContent: "JAKIS IMG czy coś",
+        visualContent: <Code />,
     },
     {
         id: project.id,
@@ -19,7 +22,6 @@ export const SectionsContent: SectionProps[] = [
             columnHeading: "Column Heading _ Projekty",
             description: "OPIS OPIS projekt",
         },
-        visualContent: "JAKIS IMG czy coś",
     },
     {
         id: offer.id,
@@ -28,11 +30,9 @@ export const SectionsContent: SectionProps[] = [
             columnHeading: "Column Heading _ oferta",
             description: "OPIS OPIS O mnie",
         },
-        visualContent: "JAKIS IMG czy coś",
     },
     {
         id: contact.id,
         heading: "Kontakt",
-        visualContent: "JAKIS formularz wariacie",
     },
 ];

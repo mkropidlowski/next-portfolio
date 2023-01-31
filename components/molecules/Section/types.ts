@@ -3,12 +3,13 @@ export interface SectionProps {
     heading?: string;
     columnContent?: ColumnDataProps;
     className?: string;
-    visualContent?: string;
+    visualContent?: JSX.Element;
 }
 
 export interface ColumnDataProps {
     columnHeading?: string;
     description?: string;
+    subHeading?: string;
     buttonPrimary?: string;
     buttonSecondary?: string;
 }
