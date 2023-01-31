@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https:/mkropidlowski.pl
+
+# Sitemaps
+Sitemap: https:/mkropidlowski.pl/sitemap.xml
