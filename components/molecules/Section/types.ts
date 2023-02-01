@@ -4,6 +4,7 @@ export interface SectionProps {
     columnContent?: ColumnDataProps;
     className?: string;
     visualContent?: JSX.Element;
+    shouldBeRow?: boolean;
 }
 
 export interface ColumnDataProps {

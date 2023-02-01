@@ -7,7 +7,7 @@ import { NextPage } from "next";
 const Home: NextPage = () => {
     return (
         <PageLayout
-            title="mKropidłowski - Usługi WWW"
+            title="Michał Kropidłowski - Tworzenie i wdrażanie stron WWW"
             description="Tworzenie stron WWW, portfolio, blogów, aplikacji do zarządzania"
         >
             <Hero />

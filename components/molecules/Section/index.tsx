@@ -5,13 +5,13 @@ import style from "./section.module.scss";
 import Heading from "components/atoms/Heading";
 import Column from "./Column/Column";
 
-const Section: FC<SectionProps> = ({ id, heading, visualContent, columnContent, className }) => {
+const Section: FC<SectionProps> = ({ id, heading, visualContent, columnContent, shouldBeRow, className }) => {
     return (
         <section className={clsx(style.container, className)} id={id}>
             <Heading variant="h2" bold className={style.sectionHeading}>
                 {heading}
             </Heading>
-            <div className={style.content}>
+            <div className={clsx(style.content, shouldBeRow && style.columnContentView)}>
                 {columnContent ? (
                     <div className={style.contentColumn}>
                         <Column columnContent={columnContent} className={style.columnText} />

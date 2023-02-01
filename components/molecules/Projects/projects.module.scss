@@ -1,0 +1,15 @@
+@import "styles/variables.scss";
+@import "styles/breakpoints.scss";
+
+.wrapper {
+    max-width: 1416px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    .projectBox {
+        max-width: 350px;
+        max-height: 350px;
+    }
+}
