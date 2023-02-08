@@ -1,30 +1,35 @@
-import Image from "next/legacy/image";
 import style from "./projects.module.scss";
-import languageApp from "../../../public/icon/languageapp.png";
+import { projectsMockup } from "config/projects/data";
+import { ProjectColumnProps } from "./types";
+import { FC } from "react";
+import ProjectCard from "./components/ProjectCard";
 
-const Projects = () => {
-    return (
-        <div className={style.wrapper}>
-            <div className={style.projectBox}>
-                <Image src={languageApp} alt="img" />
-            </div>
-            <div className={style.projectBox}>
-                <Image src={languageApp} alt="img" />
-            </div>
-            <div className={style.projectBox}>
-                <Image src={languageApp} alt="img" />
-            </div>
-            <div className={style.projectBox}>
-                <Image src={languageApp} alt="img" />
-            </div>
-            <div className={style.projectBox}>
-                <Image src={languageApp} alt="img" />
-            </div>
-            <div className={style.projectBox}>
-                <Image src={languageApp} alt="img" />
-            </div>
-        </div>
-    );
-};
+const Projects: FC<ProjectColumnProps> = () => (
+    <div className={style.wrapper}>
+        {projectsMockup.map(
+            ({
+                heading,
+                subHeading,
+                description,
+                projectImg,
+                buttonPrimary,
+                buttonSecondary,
+                sourceLink,
+                liveLink,
+            }) => (
+                <ProjectCard
+                    key={heading}
+                    heading={heading}
+                    description={description}
+                    projectImg={projectImg}
+                    buttonPrimary={buttonPrimary}
+                    buttonSecondary={buttonSecondary}
+                    sourceLink={sourceLink}
+                    liveLink={liveLink}
+                />
+            )
+        )}
+    </div>
+);
 
 export default Projects;

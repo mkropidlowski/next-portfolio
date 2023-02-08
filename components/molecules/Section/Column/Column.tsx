@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Button from "components/atoms/Button";
 import Heading from "components/atoms/Heading";
-import Link from "next/link";
+import { Link } from "components/atoms/Link";
 import { ColumnDataProps } from "../types";
 import style from "./column.module.scss";
 

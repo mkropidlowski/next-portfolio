@@ -1,6 +1,6 @@
 import { FC, HTMLProps } from "react";
 import clsx from "clsx";
-import Link from "next/link";
+import { Link } from "components/atoms/Link";
 import Button from "components/atoms/Button";
 import { menuLinks, socialLinks } from "config/navbar/data";
 import style from "./navbar.module.scss";
