@@ -5,7 +5,7 @@ import Heading from "components/atoms/Heading";
 import clsx from "clsx";
 
 export interface Props {
-    services: Props[];
+    services?: Props[];
     imgMiniature?: Props[];
     heading?: string;
     description?: string;
