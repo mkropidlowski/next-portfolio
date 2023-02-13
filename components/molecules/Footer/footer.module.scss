@@ -1,0 +1,12 @@
+@import "styles/variables.scss";
+@import "styles/breakpoints.scss";
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #fcfcfc;
+    .heading {
+        padding: 15px;
+    }
+}

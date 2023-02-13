@@ -1,0 +1,44 @@
+@import "styles/variables.scss";
+@import "styles/breakpoints.scss";
+
+.wrapper {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background: #f7f7f7;
+    border-radius: 50px;
+    .form {
+        min-width: 500px;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        border-radius: 50px;
+        .formInput,
+        .formInput:-webkit-autofill {
+            width: 250px;
+            padding: 12px;
+            line-height: 14px;
+            border: 1px solid $color-light-gray;
+            border-radius: 20px;
+            &:active {
+                border: 1px solid $color-green;
+            }
+            &:hover {
+                border: 1px solid $color-blue;
+            }
+            &:focus {
+                border: 1px solid $color-blue;
+            }
+        }
+        .formTextArea {
+            width: 250px;
+            padding: 8px 12px 8px 16px;
+            border: 1px solid $color-light-gray;
+            border-radius: 20px;
+            resize: none;
+        }
+    }
+}

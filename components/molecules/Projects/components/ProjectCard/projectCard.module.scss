@@ -10,12 +10,14 @@
     .item {
         position: relative;
         height: 280px;
-        background: $color-white;
+        background: lighten($color-blue, 15%);
         overflow-y: hidden;
         box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+
         .links {
             display: flex;
             width: 100%;
+            margin-top: 15px;
             justify-content: space-around;
         }
         .cardHeading {
@@ -54,7 +56,7 @@
         width: 100%;
         top: 0;
         transition: transform 300ms;
-        background-color: lighten($color-blue, 15%);
+        background: lighten($color-blue, 15%);
         transform: translate3d(0, calc(100% - 3.5rem), 0);
     }
 

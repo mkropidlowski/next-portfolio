@@ -1,4 +1,6 @@
 import { Code } from "components/icons";
+import ContactForm from "components/molecules/ContactForm";
+import Offer from "components/molecules/Offer";
 import Projects from "components/molecules/Projects";
 import { SectionProps } from "components/molecules/Section/types";
 import { menuLinks } from "config/navbar/data";
@@ -28,14 +30,16 @@ export const SectionsContent: SectionProps[] = [
     },
     {
         id: offer.id,
-        heading: "Oferta",
+        heading: "Usługi",
         columnContent: {
-            columnHeading: "Column Heading _ oferta",
-            description: "OPIS OPIS O mnie",
+            subHeading: "Sprawdź i skorzystaj z dobranej pod Twoje potrzeby oferty w której skład wchodzi m.in",
         },
+        visualContent: <Offer />,
+        shouldBeRow: true,
     },
     {
         id: contact.id,
         heading: "Kontakt",
+        visualContent: <ContactForm />,
     },
 ];

@@ -23,7 +23,7 @@ const ProjectCard: FC<ProjectColumnProps> = ({
             {projectImg}
             <div className={style.links}>
                 <Link href={sourceLink}>
-                    <Button color="primary" buttonSize="medium">
+                    <Button color="secondary" buttonSize="medium">
                         {buttonPrimary}
                     </Button>
                 </Link>
@@ -49,21 +49,3 @@ const ProjectCard: FC<ProjectColumnProps> = ({
 );
 
 export default ProjectCard;
-
-// <div className={style.card}>
-// <div className={clsx(style.imgSide, style.faceOne)}>{projectImg}</div>
-// <div className={clsx(style.detailsSide, style.faceTwo)}>
-//     <Heading variant="h4">{heading}</Heading>
-//     <p className={style.wrapper}>{description}</p>
-//     <Link href={sourceLink}>
-//         <Button color="primary" buttonSize="medium">
-//             {buttonPrimary}
-//         </Button>
-//     </Link>
-//     <Link href={liveLink}>
-//         <Button color="secondary" buttonSize="medium">
-//             {buttonSecondary}
-//         </Button>
-//     </Link>
-// </div>
-// </div>

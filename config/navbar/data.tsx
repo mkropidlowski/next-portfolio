@@ -17,7 +17,7 @@ export const menuLinks = {
     },
     offer: {
         id: "offer",
-        text: "Oferta",
+        text: "Usługi",
     },
     contact: {
         id: "contact",

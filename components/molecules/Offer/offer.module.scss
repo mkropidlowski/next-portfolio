@@ -1,0 +1,24 @@
+@import "styles/variables.scss";
+@import "styles/breakpoints.scss";
+
+.wrapper {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    .services {
+        width: 330px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .heading {
+            margin: 20px 0 20px;
+        }
+        .description {
+            padding: 20px;
+            text-align: left;
+        }
+    }
+}

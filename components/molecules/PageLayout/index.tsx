@@ -1,5 +1,6 @@
 import SeoData from "components/atoms/SeoData";
 import { FC, ReactNode } from "react";
+import { Footer } from "../Footer";
 import NavBar from "../NavBar";
 import style from "./pageLayout.module.scss";
 
@@ -14,6 +15,7 @@ const PageLayout: FC<Props> = ({ title, description, children }) => (
         <SeoData title={title} description={description} />
         <NavBar />
         <main className={style.container}>{children}</main>
+        <Footer />
     </div>
 );
 
