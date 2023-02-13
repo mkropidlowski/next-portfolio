@@ -26,5 +26,5 @@ const Offer: FC<Props & HTMLProps<HTMLDivElement>> = ({ services = servicesList,
         })}
     </div>
 );
-
+// edit
 export default Offer;
