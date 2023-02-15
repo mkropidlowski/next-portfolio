@@ -24,13 +24,15 @@
         gap: 100px;
         @include max-sm {
             flex-direction: column;
+            gap: 0;
         }
         &.columnContentView {
             flex-direction: column;
         }
         .imgColumn svg {
             @include max-xl {
-                width: 350px;
+                position: relative;
+                width: 250px;
             }
         }
     }
