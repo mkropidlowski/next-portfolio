@@ -22,8 +22,16 @@
         align-items: center;
         height: fit-content;
         gap: 100px;
+        @include max-sm {
+            flex-direction: column;
+        }
         &.columnContentView {
             flex-direction: column;
+        }
+        .imgColumn svg {
+            @include max-xl {
+                width: 350px;
+            }
         }
     }
 }

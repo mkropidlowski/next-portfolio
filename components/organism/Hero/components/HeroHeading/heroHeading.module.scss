@@ -7,6 +7,11 @@
     text-align: center;
     top: 200px;
     z-index: 1;
+    @include max-sm {
+        top: 120px;
+        left: 20px;
+        width: 300px;
+    }
     .heading {
         position: relative;
         left: 150px;
@@ -21,5 +26,10 @@
         -webkit-text-fill-color: transparent;
         -moz-background-clip: text;
         -moz-text-fill-color: transparent;
+        @include max-sm {
+            left: 10px;
+            font-size: 30px;
+            width: 100%;
+        }
     }
 }
