@@ -1,4 +1,4 @@
-import { FC, HTMLProps } from "react";
+import { FC, HTMLProps, useEffect, useState } from "react";
 import clsx from "clsx";
 import { Link } from "components/atoms/Link";
 import Button from "components/atoms/Button";
@@ -10,19 +10,42 @@ export interface Props {
     links?: Props[];
     socialIcon?: Props[];
     text?: string;
+    showMenu?: boolean;
 }
 
-const NavBar: FC<Props & HTMLProps<HTMLDivElement>> = ({ links = menuLinks, socialIcon = socialLinks, className }) => {
+const NavBar: FC<Props & HTMLProps<HTMLDivElement>> = ({
+    links = menuLinks,
+    socialIcon = socialLinks,
+
+    className,
+}) => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleMenuClick = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const handleLinkClick = () => {
+        setIsOpen(false);
+    };
+
     return (
         <nav className={clsx(style.wrapper, className)}>
-            <Logo />
-            <ul className={style.menu}>
+            <Logo onClick={handleMenuClick} className={clsx(style.logo)} />
+
+            <ul className={clsx(style.menu, isOpen ? style.open : "")}>
                 {Object.values(links).map(({ id, text }) => {
                     const linksHref = `/#${id}`;
                     return (
                         <li key={text} className={style.menuLinks}>
                             <Link href={linksHref}>
-                                <Button type="button" color="tertiary" buttonSize="medium" className={style.linkButton}>
+                                <Button
+                                    type="button"
+                                    color="tertiary"
+                                    buttonSize="medium"
+                                    className={style.linkButton}
+                                    onClick={handleLinkClick}
+                                >
                                     {text}
                                 </Button>
                             </Link>
@@ -30,7 +53,7 @@ const NavBar: FC<Props & HTMLProps<HTMLDivElement>> = ({ links = menuLinks, soci
                     );
                 })}
             </ul>
-            <ul className={style.socialLinks}>
+            <ul className={clsx(style.socialLinksBox, isOpen ? style.open : "")}>
                 {Object.values(socialIcon).map(({ id, icon }) => {
                     const linksHref = `${id}`;
                     return (

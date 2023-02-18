@@ -11,6 +11,16 @@
     background: $color-white;
     box-shadow: $box-shadow-navbar;
     z-index: 50;
+    transition: background 0.5s;
+    @include max-sm {
+        height: fit-content;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .logo {
+        margin: 20px 0 20px;
+    }
+
     .menu {
         display: flex;
         flex-direction: row;
@@ -18,13 +28,40 @@
         margin: 0;
         padding: 0;
         gap: 30px;
+        @include max-sm {
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
     }
-    .socialLinks {
+
+    .socialLinksBox {
         display: flex;
         flex-direction: row;
         list-style-type: none;
         margin: 0;
         padding: 0;
         gap: 10px;
+        @include max-sm {
+            margin: 15px 0 15px;
+        }
+    }
+    // ==== menu hover ==== //
+
+    @include max-sm {
+        .socialLinksBox,
+        .menu {
+            display: none;
+        }
+        .open {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 5px 0;
+            width: 100%;
+            color: white;
+            background-color: $color-white;
+        }
     }
 }
