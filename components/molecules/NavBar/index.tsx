@@ -31,8 +31,12 @@ const NavBar: FC<Props & HTMLProps<HTMLDivElement>> = ({
 
     return (
         <nav className={clsx(style.wrapper, className)}>
-            <Logo onClick={handleMenuClick} className={clsx(style.logo)} />
-
+            <Logo className={clsx(style.logo)} />
+            <div className={style.hamburgerIcon} onClick={handleMenuClick}>
+                <div className={style.bar}></div>
+                <div className={style.bar}></div>
+                <div className={style.bar}></div>
+            </div>
             <ul className={clsx(style.menu, isOpen ? style.open : "")}>
                 {Object.values(links).map(({ id, text }) => {
                     const linksHref = `/#${id}`;
