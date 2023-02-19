@@ -39,7 +39,9 @@ const ProjectCard: FC<ProjectColumnProps> = ({
                 </Heading>
                 <div className={style.itemBody}>
                     <div className={style.details}>
-                        <Heading variant="h4">{heading}</Heading>
+                        <Heading variant="h4" className={style.descriptionSubHeading}>
+                            {subHeading}
+                        </Heading>
                         <p className={style.description}>{description}</p>
                     </div>
                 </div>

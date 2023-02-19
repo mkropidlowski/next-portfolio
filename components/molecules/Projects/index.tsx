@@ -20,6 +20,7 @@ const Projects: FC<ProjectColumnProps> = () => (
                 <ProjectCard
                     key={heading}
                     heading={heading}
+                    subHeading={subHeading}
                     description={description}
                     projectImg={projectImg}
                     buttonPrimary={buttonPrimary}

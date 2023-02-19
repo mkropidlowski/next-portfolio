@@ -3,6 +3,8 @@ import clsx from "clsx";
 import { Link } from "components/atoms/Link";
 import Button from "components/atoms/Button";
 import { menuLinks, socialLinks } from "config/navbar/data";
+import { BREAKPOINT } from "./types";
+import useMediaQuery from "hooks/useMediaQuery";
 import style from "./navbar.module.scss";
 import Logo from "components/atoms/Logo";
 
@@ -20,6 +22,16 @@ const NavBar: FC<Props & HTMLProps<HTMLDivElement>> = ({
     className,
 }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+    const isMobileDevice = useMediaQuery(BREAKPOINT["MAX-SM"]);
+
+    useEffect(() => {
+        if (isMobileDevice) {
+            setIsMobile(true);
+        } else {
+            setIsMobile(false);
+        }
+    }, [isMobileDevice]);
 
     const handleMenuClick = () => {
         setIsOpen(!isOpen);
@@ -32,11 +44,15 @@ const NavBar: FC<Props & HTMLProps<HTMLDivElement>> = ({
     return (
         <nav className={clsx(style.wrapper, className)}>
             <Logo className={clsx(style.logo)} />
-            <div className={style.hamburgerIcon} onClick={handleMenuClick}>
-                <div className={style.bar}></div>
-                <div className={style.bar}></div>
-                <div className={style.bar}></div>
-            </div>
+
+            {isMobile ? (
+                <div className={style.hamburgerIcon} onClick={handleMenuClick}>
+                    <div className={style.bar}></div>
+                    <div className={style.bar}></div>
+                    <div className={style.bar}></div>
+                </div>
+            ) : null}
+
             <ul className={clsx(style.menu, isOpen ? style.open : "")}>
                 {Object.values(links).map(({ id, text }) => {
                     const linksHref = `/#${id}`;

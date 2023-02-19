@@ -9,7 +9,7 @@
     color: $color-white;
     .item {
         position: relative;
-        height: 280px;
+        height: 330px;
         background: lighten($color-blue, 15%);
         overflow-y: hidden;
         box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
@@ -17,7 +17,7 @@
         .links {
             display: flex;
             width: 100%;
-            margin-top: 15px;
+            margin-top: 35px;
             justify-content: space-around;
         }
         .cardHeading {
@@ -36,6 +36,14 @@
                 width: 100%;
                 height: 100%;
                 z-index: 1;
+            }
+            .itemBody {
+                .descriptionSubHeading {
+                    font-size: 15px;
+                }
+                .description {
+                    font-size: 13px;
+                }
             }
         }
     }
