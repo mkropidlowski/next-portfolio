@@ -5,7 +5,6 @@ import Languageapp from "../projects/images/languageapp.png";
 export const projectsMockup: ProjectColumnProps[] = [
     {
         heading: "Strona szkoły językowej",
-        subHeading: "Projekt strony szkoły językowej",
         description:
             "Strona posiada funkcjonalności takie jak, formularz kontaktowy, panel logowania dla administratora w którym po zalogowaniu posiada on dostęp do wysłanych e-maili, oraz opcje dodania posta do bloga, posty widoczne są na stronie głównej z możliością edycji oraz dodawania wyłącznie przez administatora.",
         buttonPrimary: "Source",
