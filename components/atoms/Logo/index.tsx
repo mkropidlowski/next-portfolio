@@ -11,7 +11,7 @@ const Logo: FC<Props & HTMLProps<HTMLDivElement>> = ({ className, ...rest }) => 
     <div className={clsx(style.logo, className)} {...rest}>
         <Link href="/">
             <Heading variant="h4" className={style.logoText}>
-                &lt;/ mKropidlowski.pl &gt;
+                &lt;/ mKropidłowski.pl &gt;
             </Heading>
         </Link>
     </div>

@@ -28,6 +28,9 @@ const ContactForm: FC<HTMLProps<HTMLFormElement>> = ({}) => {
         try {
             await sendContactForm(mail);
             setIsLoading(true);
+            setName("");
+            setEmail("");
+            setMessage("");
         } catch (error) {
             setError("Bład wysyłania.");
             setIsLoading(true);
