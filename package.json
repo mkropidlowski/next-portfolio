@@ -27,7 +27,9 @@
     "devDependencies": {
         "@svgr/cli": "^6.5.1",
         "@types/lodash.capitalize": "^4.2.7",
+        "@types/nodemailer": "^6.4.7",
         "next-sitemap": "^3.1.48",
+        "nodemailer": "^6.9.1",
         "url-loader": "^4.1.1"
     }
 }

@@ -55,8 +55,9 @@
     .image svg {
         @include max-sm {
             position: relative;
-            top: -100px;
+            top: -50px;
             width: 310px !important;
+            height: 300px !important;
         }
     }
 }
