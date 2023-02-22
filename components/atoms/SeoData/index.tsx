@@ -9,6 +9,7 @@ interface Props {
 const SeoData: FC<Props> = ({ title, description }) => (
     <Head>
         <title>{title}</title>
+        <meta name="google-site-verification" content="58RSqU5pOgwzlmVEBOW3_eXO_nxTGAr4cwnrPCia1u0" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta
