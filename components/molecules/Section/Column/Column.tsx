@@ -11,7 +11,7 @@ export interface Props {
 }
 
 const Column = ({ columnContent, className }) => {
-    const { columnHeading, subHeading, description, buttonPrimary, buttonSecondary } = columnContent ?? {};
+    const { columnHeading, subHeading, description, buttonPrimary, buttonSecondary, formHref } = columnContent ?? {};
 
     return (
         <div className={clsx(style.container, className)}>
@@ -28,7 +28,7 @@ const Column = ({ columnContent, className }) => {
             <p className={style.description}>{description}</p>
             {buttonPrimary ? (
                 <div className={style.buttonBox}>
-                    <Link href="/">
+                    <Link href={formHref ? formHref : "/"}>
                         <Button color="primary">{buttonPrimary}</Button>
                     </Link>
                     {buttonSecondary ? (

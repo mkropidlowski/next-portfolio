@@ -15,6 +15,7 @@ export const SectionsContent: SectionProps[] = [
             description:
                 "Cześć, nazywam się Michał Kropidłowski, zajmuję się tworzeniem stron internetowych, blogów, portolio czy te małych aplikacji do zarządania zasobami w Twoim biznensie. Jeśli chcesz posiadać własną stronę WWW bedącą reklamą lub prezentacją Twojego biznesu, skontaktuj się ze mną w celu omówienia szczegółów.",
             buttonPrimary: "Skontaktuj się po przez formularz!",
+            formHref: "#contact",
         },
         shouldBeRow: false,
         visualContent: <Code />,

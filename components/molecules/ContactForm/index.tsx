@@ -37,7 +37,7 @@ const ContactForm: FC<HTMLProps<HTMLFormElement>> = ({}) => {
         }
     };
     return (
-        <div className={clsx(style.wrapper)}>
+        <div className={clsx(style.wrapper)} id="contact">
             <form className={style.form} onSubmit={handleSubmit}>
                 <label htmlFor="name">
                     <input

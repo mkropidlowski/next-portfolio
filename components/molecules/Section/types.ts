@@ -13,4 +13,5 @@ export interface ColumnDataProps {
     subHeading?: string;
     buttonPrimary?: string;
     buttonSecondary?: string;
+    formHref?: string;
 }
