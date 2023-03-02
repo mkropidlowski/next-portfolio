@@ -1,77 +1,83 @@
 import clsx from "clsx";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
 import Button from "components/atoms/Button";
 import { Contact } from "components/icons";
-import { FC, HTMLProps, useState } from "react";
+import { FC, useState } from "react";
 import style from "./contactForm.module.scss";
-import { formField } from "./data/data";
+import { formField, formStatusCode, ResponseStatus } from "./data/data";
 import { publicEnvs } from "config/envs";
 import { sendContactForm } from "lib/api";
+import { validationSchema } from "./data/validation";
+import { ContactFormProps } from "./types";
+import { LabelText } from "components/atoms/Label";
 
 const EMAIL_ADRESS = `${publicEnvs.GMAIL_ADRESS}`;
 
-const ContactForm: FC<HTMLProps<HTMLFormElement>> = ({}) => {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
-    const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState("");
+const ContactForm: FC = () => {
+    const [responseStatus, setResponseStatus] = useState<ResponseStatus>(null);
 
-    const handleSubmit = async (event) => {
-        event.preventDefault();
+    const {
+        register,
+        handleSubmit,
+        getValues,
+        formState: { errors },
+    } = useForm<ContactFormProps>({
+        mode: "all",
+        resolver: yupResolver(validationSchema),
+    });
 
-        const mail = {
-            name,
-            address: email,
+    const submitForm = async () => {
+        const formData = getValues();
+        setResponseStatus("pending");
+
+        const userEmail = {
+            name: formData.name,
+            address: formData.email,
             to: EMAIL_ADRESS,
-            text: message,
+            text: formData.message,
         };
         try {
-            await sendContactForm(mail);
-            setIsLoading(true);
-            setName("");
-            setEmail("");
-            setMessage("");
+            await sendContactForm(userEmail);
+            setResponseStatus("sent");
         } catch (error) {
-            setError("Bład wysyłania.");
-            setIsLoading(true);
+            setResponseStatus("error");
         }
     };
     return (
         <div className={clsx(style.wrapper)} id="contact">
-            <form className={style.form} onSubmit={handleSubmit}>
-                <label htmlFor="name">
-                    <input
-                        type="text"
-                        className={style.formInput}
-                        placeholder={formField.name}
-                        value={name}
-                        onChange={(event) => setName(event.target.value)}
-                        required
-                    />
-                </label>
-                <label htmlFor="email">
+            <form
+                className={style.form}
+                onSubmit={(e) => {
+                    e.preventDefault();
+                    handleSubmit(submitForm)();
+                }}
+            >
+                <LabelText>
+                    <input type="text" className={style.formInput} placeholder={formField.name} {...register("name")} />
+                    <p className={style.errorText}>{errors.name?.message}</p>
+                </LabelText>
+                <LabelText>
                     <input
                         type="text"
                         className={style.formInput}
                         placeholder={formField.email}
-                        value={email}
-                        onChange={(event) => setEmail(event.target.value)}
-                        required
+                        {...register("email")}
                     />
-                </label>
-                <label htmlFor="text">
+                    <p className={style.errorText}>{errors.email?.message}</p>
+                </LabelText>
+                <LabelText>
                     <textarea
                         className={style.formTextArea}
                         placeholder={formField.text}
-                        value={message}
-                        onChange={(event) => setMessage(event.target.value)}
-                        required
+                        {...register("message")}
                     ></textarea>
-                </label>
+                    <p className={style.errorText}>{errors.message?.message}</p>
+                </LabelText>
+
                 <Button color="primary" buttonSize="medium" type="submit">
-                    {isLoading ? formField.sending : formField.send}
+                    {formStatusCode[responseStatus] ?? formStatusCode.default}
                 </Button>
-                {error ? error : null}
             </form>
             <div className={style.image}>
                 <Contact />

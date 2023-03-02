@@ -2,7 +2,12 @@ export const formField = {
     name: "Imię i nazwisko",
     email: "Adres e-mail",
     text: "Twoja wiadomość",
-    send: "Wyślij wiadomość",
-    sending: "Wysłano wiadomość",
-    sendingError: "Bład wysyłania wiadomości",
+};
+
+export type ResponseStatus = "pending" | "sent" | "error";
+
+export const formStatusCode = {
+    pending: "Wysyłanie..",
+    sent: "Wysłano :-)",
+    default: "Wyślij wiadomość",
 };

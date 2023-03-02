@@ -3,7 +3,7 @@
 
 .wrapper {
     position: relative;
-    top: 100px;
+    top: 50px;
     display: flex;
     background: #f7f7f7;
     border-radius: 50px;
@@ -33,6 +33,26 @@
             line-height: 14px;
             border: 1px solid $color-light-gray;
             border-radius: 20px;
+            outline: none;
+            &:active {
+                border: 1px solid $color-green;
+            }
+            &:hover {
+                border: 1px solid $color-blue;
+            }
+            &:focus {
+                border: 1px solid $color-blue;
+            }
+            &:focus-visible {
+                border: 1px solid red;
+            }
+        }
+        .formTextArea {
+            width: 250px;
+            padding: 8px 12px 8px 16px;
+            border: 1px solid $color-light-gray;
+            border-radius: 20px;
+            resize: none;
             &:active {
                 border: 1px solid $color-green;
             }
@@ -43,12 +63,10 @@
                 border: 1px solid $color-blue;
             }
         }
-        .formTextArea {
-            width: 250px;
-            padding: 8px 12px 8px 16px;
-            border: 1px solid $color-light-gray;
-            border-radius: 20px;
-            resize: none;
+        .errorText {
+            font-size: 12px;
+            color: red;
+            padding: 5px;
         }
     }
 

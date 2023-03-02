@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         >
             <Hero />
             {SectionsContent.map(({ ...props }) => (
-                <Section key={props.id} className={""} {...props} />
+                <Section key={props.id} {...props} />
             ))}
         </PageLayout>
     );
