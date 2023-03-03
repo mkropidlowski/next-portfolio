@@ -42,8 +42,8 @@ const NavBar: FC<Props & HTMLProps<HTMLDivElement>> = ({
     };
 
     return (
-        <nav className={clsx(style.wrapper, className)}>
-            <Logo className={clsx(style.logo)} />
+        <nav className={clsx(style.wrapper, className)} data-cy="navBar">
+            <Logo className={clsx(style.logo)} data-cy="pageLogo" />
 
             {isMobile ? (
                 <div className={style.hamburgerIcon} onClick={handleMenuClick}>
@@ -53,7 +53,7 @@ const NavBar: FC<Props & HTMLProps<HTMLDivElement>> = ({
                 </div>
             ) : null}
 
-            <ul className={clsx(style.menu, isOpen ? style.open : "")}>
+            <ul className={clsx(style.menu, isOpen ? style.open : "")} data-cy="navLinks">
                 {Object.values(links).map(({ id, text }) => {
                     const linksHref = `/#${id}`;
                     return (
@@ -73,7 +73,7 @@ const NavBar: FC<Props & HTMLProps<HTMLDivElement>> = ({
                     );
                 })}
             </ul>
-            <ul className={clsx(style.socialLinksBox, isOpen ? style.open : "")}>
+            <ul className={clsx(style.socialLinksBox, isOpen ? style.open : "")} data-cy="socialLinks">
                 {Object.values(socialIcon).map(({ id, icon }) => {
                     const linksHref = `${id}`;
                     return (

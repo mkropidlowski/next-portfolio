@@ -52,10 +52,17 @@ const ContactForm: FC = () => {
                     e.preventDefault();
                     handleSubmit(submitForm)();
                 }}
+                data-cy="contactForm"
             >
                 <LabelText>
-                    <input type="text" className={style.formInput} placeholder={formField.name} {...register("name")} />
-                    <p className={style.errorText}>{errors.name?.message}</p>
+                    <input
+                        type="text"
+                        className={style.formInput}
+                        placeholder={formField.name}
+                        {...register("name")}
+                        data-cy="userName"
+                    />
+                    {errors.name && <p className={style.errorText}>{errors.name?.message}</p>}
                 </LabelText>
                 <LabelText>
                     <input
@@ -63,6 +70,7 @@ const ContactForm: FC = () => {
                         className={style.formInput}
                         placeholder={formField.email}
                         {...register("email")}
+                        data-cy="emailAdress"
                     />
                     <p className={style.errorText}>{errors.email?.message}</p>
                 </LabelText>
@@ -71,11 +79,12 @@ const ContactForm: FC = () => {
                         className={style.formTextArea}
                         placeholder={formField.text}
                         {...register("message")}
+                        data-cy="userMessage"
                     ></textarea>
                     <p className={style.errorText}>{errors.message?.message}</p>
                 </LabelText>
 
-                <Button color="primary" buttonSize="medium" type="submit">
+                <Button color="primary" buttonSize="medium" type="submit" data-cy="submitFormButton">
                     {formStatusCode[responseStatus] ?? formStatusCode.default}
                 </Button>
             </form>

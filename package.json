@@ -7,7 +7,9 @@
         "build": "next build",
         "start": "next start",
         "sitemap": "next-sitemap --config next-sitemap.config.js",
-        "lint": "next lint"
+        "lint": "next lint",
+        "test:e2e": "npx cypress run",
+        "open": "npx cypress open"
     },
     "dependencies": {
         "@next/font": "13.1.4",
@@ -29,6 +31,7 @@
         "@svgr/cli": "^6.5.1",
         "@types/lodash.capitalize": "^4.2.7",
         "@types/nodemailer": "^6.4.7",
+        "cypress": "^12.7.0",
         "next-sitemap": "^3.1.48",
         "nodemailer": "^6.9.1",
         "react-hook-form": "^7.43.2",

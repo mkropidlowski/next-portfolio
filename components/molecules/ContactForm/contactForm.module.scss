@@ -43,9 +43,9 @@
             &:focus {
                 border: 1px solid $color-blue;
             }
-            &:focus-visible {
-                border: 1px solid red;
-            }
+            // &:focus-visible {
+            //     border: 1px solid red;
+            // }
         }
         .formTextArea {
             width: 250px;
