@@ -1,4 +1,10 @@
-## Technologies: Next.js / TypeScript / SCSS / Cypress / hook-forms / nodemailer
+## Technologies:
+  - Next.js 
+  - TypeScript 
+  - SCSS 
+  - Cypress 
+  - hook-forms 
+  - nodemailer
 
 ## Page screenshot: 
 
