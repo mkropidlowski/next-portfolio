@@ -1,6 +1,7 @@
 import { ProjectColumnProps } from "components/molecules/Projects/types";
 import Image from "next/legacy/image";
 import Languageapp from "../projects/images/languageapp.png";
+import Jobapp from "../projects/images/jobapp.png";
 
 export const projectsMockup: ProjectColumnProps[] = [
     {
@@ -12,5 +13,15 @@ export const projectsMockup: ProjectColumnProps[] = [
         sourceLink: "https://github.com/mkropidlowski/language-app",
         liveLink: "https://language-app-h7ab.vercel.app/",
         projectImg: <Image src={Languageapp} alt="LanguageApp" objectFit="cover" />,
+    },
+    {
+        heading: "Strona z ofertami pracy",
+        description:
+            "Strona posiada funkcjonalności takie jak, tablice o ofertami po wybraniu kazdej z ofert porzechodzimy to szczegółowego opisu, dodatkowo opcja dodania nowej oferty oraz formularz kontaktowy.",
+        buttonPrimary: "Source",
+        buttonSecondary: "Live",
+        sourceLink: "https://github.com/mkropidlowski/jobs-portal",
+        liveLink: "https://jobs-portal-seven.vercel.app/",
+        projectImg: <Image src={Jobapp} alt="LanguageApp" objectFit="cover" />,
     },
 ];
