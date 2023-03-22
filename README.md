@@ -1,4 +1,9 @@
-## Getting Started
+## Page screenshot: 
+
+![wwwmk](https://user-images.githubusercontent.com/16814863/226879507-a669cff9-923e-4b38-b9fe-c4a46e0ca84d.png)
+
+
+## About APP:
 
 1. Download repository,
 2. npm install in console to install all dependencies,
