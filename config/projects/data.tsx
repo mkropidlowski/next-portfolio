@@ -39,7 +39,7 @@ export const projectsMockup: ProjectColumnProps[] = [
     {
         heading: "Portal turystyczny",
         description:
-            "Funkcjonalności: przeglądanie aktualnych atrakcji, panel logowania, mozliwość dodawania i usuwania atakcji.",
+            "Funkcjonalności: przeglądanie aktualnych atrakcji, panel logowania i rejestracji, mozliwość dodawania i usuwania atakcji.",
         buttonPrimary: "Source",
         buttonSecondary: "Live",
         sourceLink: "https://github.com/mkropidlowski/travel-app",
