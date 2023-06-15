@@ -3,6 +3,7 @@ import Image from "next/legacy/image";
 import Languageapp from "../projects/images/languageapp.png";
 import Jobapp from "../projects/images/jobapp.png";
 import ShopImg from "../projects/images/shop_img.png";
+import TravelPortal from "../projects/images/travel.png";
 
 export const projectsMockup: ProjectColumnProps[] = [
     {
@@ -34,5 +35,15 @@ export const projectsMockup: ProjectColumnProps[] = [
         sourceLink: "https://github.com/mkropidlowski/shop-project",
         liveLink: "https://shop-project-pink.vercel.app/",
         projectImg: <Image src={ShopImg} alt="LanguageApp" objectFit="cover" />,
+    },
+    {
+        heading: "Portal turystyczny",
+        description:
+            "Funkcjonalności: przeglądanie aktualnych atrakcji, panel logowania, mozliwość dodawania i usuwania atakcji.",
+        buttonPrimary: "Source",
+        buttonSecondary: "Live",
+        sourceLink: "https://github.com/mkropidlowski/travel-app",
+        liveLink: "https://travel-app-five-sigma.vercel.app/",
+        projectImg: <Image src={TravelPortal} alt="Travel Portal" objectFit="cover" />,
     },
 ];
