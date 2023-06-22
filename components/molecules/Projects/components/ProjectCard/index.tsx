@@ -5,6 +5,7 @@ import Heading from "components/atoms/Heading";
 import { Link } from "components/atoms/Link";
 import Button from "components/atoms/Button";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 
 const ProjectCard: FC<ProjectColumnProps> = ({
     heading,
@@ -17,7 +18,12 @@ const ProjectCard: FC<ProjectColumnProps> = ({
     sourceLink,
     className,
 }) => (
-    <div className={clsx(style.wrapper, className)}>
+    <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }}
+        className={clsx(style.wrapper, className)}
+    >
         <div className={style.item}>
             <div className={style.imgView}>{projectImg}</div>
 
@@ -47,7 +53,7 @@ const ProjectCard: FC<ProjectColumnProps> = ({
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
 );
 
 export default ProjectCard;
