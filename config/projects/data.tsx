@@ -1,6 +1,6 @@
 import { ProjectColumnProps } from "components/molecules/Projects/types";
 import Image from "next/image";
-import Languageapp from "../projects/images/languageApp.png";
+import Languageapp from "../projects/images/languageapp.png";
 import Jobapp from "../projects/images/jobapp.png";
 import TravelPortal from "../projects/images/travel.png";
 
