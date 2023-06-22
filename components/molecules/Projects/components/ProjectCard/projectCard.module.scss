@@ -16,10 +16,18 @@
         padding: 20px;
         border-radius: 10px;
         background: #7286d3;
+        @include max-sm {
+            max-width: 320px;
+            flex-direction: column;
+        }
         .imgView {
             width: 320px;
             height: 250px;
             background: whitesmoke;
+            @include max-sm {
+                max-width: 300px;
+                height: 200px;
+            }
             & {
                 position: relative;
                 overflow: hidden;
