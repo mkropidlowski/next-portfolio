@@ -1,8 +1,7 @@
 import { ProjectColumnProps } from "components/molecules/Projects/types";
-import Image from "next/legacy/image";
-import Languageapp from "../projects/images/languageapp.png";
+import Image from "next/image";
+import Languageapp from "../projects/images/languageApp.png";
 import Jobapp from "../projects/images/jobapp.png";
-import ShopImg from "../projects/images/shop_img.png";
 import TravelPortal from "../projects/images/travel.png";
 
 export const projectsMockup: ProjectColumnProps[] = [
@@ -14,7 +13,7 @@ export const projectsMockup: ProjectColumnProps[] = [
         buttonSecondary: "Live",
         sourceLink: "https://github.com/mkropidlowski/language-app",
         liveLink: "https://language-app-h7ab.vercel.app/",
-        projectImg: <Image src={Languageapp} alt="LanguageApp" objectFit="cover" />,
+        projectImg: <Image src={Languageapp} alt="LanguageApp" style={{ objectFit: "contain" }} fill priority />,
     },
     {
         heading: "Strona z ofertami pracy",
@@ -24,17 +23,7 @@ export const projectsMockup: ProjectColumnProps[] = [
         buttonSecondary: "Live",
         sourceLink: "https://github.com/mkropidlowski/jobs-portal",
         liveLink: "https://jobs-portal-seven.vercel.app/",
-        projectImg: <Image src={Jobapp} alt="LanguageApp" objectFit="cover" />,
-    },
-    {
-        heading: "Sklep internetowy",
-        description:
-            "Strona posiada funkcjonalności takie jak, lista produtków dostępnych do kupienia, opcje dodania do koszyka, wykonanie płatności i wiele więcej.",
-        buttonPrimary: "Source",
-        buttonSecondary: "Live",
-        sourceLink: "https://github.com/mkropidlowski/shop-project",
-        liveLink: "https://shop-project-pink.vercel.app/",
-        projectImg: <Image src={ShopImg} alt="LanguageApp" objectFit="cover" />,
+        projectImg: <Image src={Jobapp} alt="LanguageApp" style={{ objectFit: "contain" }} fill priority />,
     },
     {
         heading: "Portal turystyczny",
@@ -44,6 +33,6 @@ export const projectsMockup: ProjectColumnProps[] = [
         buttonSecondary: "Live",
         sourceLink: "https://github.com/mkropidlowski/travel-app",
         liveLink: "https://travel-app-five-sigma.vercel.app/",
-        projectImg: <Image src={TravelPortal} alt="Travel Portal" objectFit="cover" />,
+        projectImg: <Image src={TravelPortal} alt="Travel Portal" style={{ objectFit: "contain" }} fill priority />,
     },
 ];

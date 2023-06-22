@@ -19,20 +19,8 @@ const ProjectCard: FC<ProjectColumnProps> = ({
 }) => (
     <div className={clsx(style.wrapper, className)}>
         <div className={style.item}>
-            <div className={style.imgView}></div>
-            {projectImg}
-            <div className={style.links}>
-                <Link href={sourceLink}>
-                    <Button color="secondary" buttonSize="medium">
-                        {buttonPrimary}
-                    </Button>
-                </Link>
-                <Link href={liveLink}>
-                    <Button color="secondary" buttonSize="medium">
-                        {buttonSecondary}
-                    </Button>
-                </Link>
-            </div>
+            <div className={style.imgView}>{projectImg}</div>
+
             <div className={style.itemOverlay}>
                 <Heading variant="h4" className={style.cardHeading}>
                     {heading}
@@ -43,6 +31,18 @@ const ProjectCard: FC<ProjectColumnProps> = ({
                             {subHeading}
                         </Heading>
                         <p className={style.description}>{description}</p>
+                    </div>
+                    <div className={style.links}>
+                        <Link href={sourceLink}>
+                            <Button color="secondary" buttonSize="medium" className={style.button}>
+                                {buttonPrimary}
+                            </Button>
+                        </Link>
+                        <Link href={liveLink}>
+                            <Button color="primary" buttonSize="medium" className={style.button}>
+                                {buttonSecondary}
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>
