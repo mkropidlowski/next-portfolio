@@ -8,7 +8,7 @@
 
 ## Page screenshot: 
 
-![wwwmk](https://user-images.githubusercontent.com/16814863/226879507-a669cff9-923e-4b38-b9fe-c4a46e0ca84d.png)
+![screencapture-localhost-3000-2023-06-26-18_53_13](https://github.com/mkropidlowski/next-portfolio/assets/16814863/b7cac59f-fbbb-4b4b-8d61-60bb0a7b64da)
 
 
 ## About APP:
