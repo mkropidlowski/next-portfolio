@@ -2,6 +2,7 @@ import { ProjectColumnProps } from "components/molecules/Projects/types";
 import Image from "next/image";
 import Languageapp from "../projects/images/languageapp.png";
 import Jobapp from "../projects/images/jobapp.png";
+import Hairdresser from "../projects/images/hairdresser.png";
 import TravelPortal from "../projects/images/travel.png";
 
 export const projectsMockup: ProjectColumnProps[] = [
@@ -34,5 +35,14 @@ export const projectsMockup: ProjectColumnProps[] = [
         sourceLink: "https://github.com/mkropidlowski/travel-app",
         liveLink: "https://travel-app-five-sigma.vercel.app/",
         projectImg: <Image src={TravelPortal} alt="Travel Portal" style={{ objectFit: "contain" }} fill priority />,
+    },
+    {
+        heading: "Landing Page",
+        description: "Strona portfolio salonu fryzjerskiego, zawierająca informacje o firmie, projekty, cennik.",
+        buttonPrimary: "Source",
+        buttonSecondary: "Live",
+        sourceLink: "https://github.com/mkropidlowski/hairdresser-website",
+        liveLink: "https://hairdresser-website.vercel.app/",
+        projectImg: <Image src={Hairdresser} alt="Travel Portal" style={{ objectFit: "contain" }} fill priority />,
     },
 ];

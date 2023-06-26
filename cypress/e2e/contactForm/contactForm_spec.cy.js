@@ -32,7 +32,5 @@ describe("Checking Contact Form", () => {
         cy.get('[data-cy="emailAdress"]').type("test@test.pl", { delay: 100, force: true });
         cy.get('[data-cy="userMessage"]').type("Example message", { delay: 100, force: true });
         cy.get('[data-cy="submitFormButton"]').click({ force: true });
-
-        cy.g;
     });
 });

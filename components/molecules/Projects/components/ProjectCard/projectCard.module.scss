@@ -8,6 +8,7 @@
     color: $color-white;
 
     .item {
+        max-width: 950px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -17,7 +18,7 @@
         border-radius: 10px;
         background: #7286d3;
         @include max-sm {
-            max-width: 320px;
+            max-width: 310px;
             flex-direction: column;
         }
         .imgView {

@@ -17,7 +17,7 @@ const Section: FC<SectionProps> = ({ id, heading, visualContent, columnContent, 
             </Heading>
             <div
                 style={{
-                    transform: isInView ? "none" : "translateX(400px)",
+                    transform: isInView ? "none" : "translateY(200px)",
                     opacity: isInView ? 1 : 0,
                     transition: "all 1.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
                 }}
@@ -29,9 +29,9 @@ const Section: FC<SectionProps> = ({ id, heading, visualContent, columnContent, 
                     </div>
                 ) : null}
                 <motion.div
-                    initial={{ opacity: 0, x: 175 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.3 }}
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
                     viewport={{}}
                     className={style.imgColumn}
                 >
