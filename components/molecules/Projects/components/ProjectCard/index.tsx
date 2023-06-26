@@ -21,7 +21,7 @@ const ProjectCard: FC<ProjectColumnProps> = ({
     <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         className={clsx(style.wrapper, className)}
     >
         <div className={style.item}>

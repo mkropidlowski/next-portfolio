@@ -32,7 +32,7 @@ const Section: FC<SectionProps> = ({ id, heading, visualContent, columnContent, 
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 }}
-                    viewport={{}}
+                    viewport={{ once: true }}
                     className={style.imgColumn}
                 >
                     {visualContent}
