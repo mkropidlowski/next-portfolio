@@ -8,7 +8,7 @@ import Botricho from "../projects/images/botricho.png";
 
 export const projectsMockup: ProjectColumnProps[] = [
     {
-        heading: "Strona salony trychologiczego",
+        heading: "Strona salonu trychologiczego",
         description:
             "Strona posiada funkcjonalności takie jak, panel logowania dla administratora w którym po zalogowaniu posiada on dostęp do usług dostępnych w salonie oraz opcje ich dodawania, usuwania, edytowania.",
         buttonPrimary: "Source",
