@@ -4,8 +4,19 @@ import Languageapp from "../projects/images/languageapp.png";
 import Jobapp from "../projects/images/jobapp.png";
 import Hairdresser from "../projects/images/hairdresser.png";
 import TravelPortal from "../projects/images/travel.png";
+import Botricho from "../projects/images/botricho.png";
 
 export const projectsMockup: ProjectColumnProps[] = [
+    {
+        heading: "Strona salony trychologiczego",
+        description:
+            "Strona posiada funkcjonalności takie jak, panel logowania dla administratora w którym po zalogowaniu posiada on dostęp do usług dostępnych w salonie oraz opcje ich dodawania, usuwania, edytowania.",
+        buttonPrimary: "Source",
+        buttonSecondary: "Live",
+        sourceLink: "https://github.com/mkropidlowski/botricho-page",
+        liveLink: "https://botricho.pl",
+        projectImg: <Image src={Botricho} alt="LanguageApp" style={{ objectFit: "contain" }} fill priority />,
+    },
     {
         heading: "Strona szkoły językowej",
         description:
