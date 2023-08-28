@@ -39,12 +39,12 @@ const ProjectCard: FC<ProjectColumnProps> = ({
                         <p className={style.description}>{description}</p>
                     </div>
                     <div className={style.links}>
-                        <Link href={sourceLink}>
+                        <Link href={sourceLink} target="_blank">
                             <Button color="secondary" buttonSize="medium" className={style.button}>
                                 {buttonPrimary}
                             </Button>
                         </Link>
-                        <Link href={liveLink}>
+                        <Link href={liveLink} target="_blank">
                             <Button color="primary" buttonSize="medium" className={style.button}>
                                 {buttonSecondary}
                             </Button>
