@@ -2,25 +2,42 @@
 @import "styles/breakpoints.scss";
 
 .wrapper {
-    max-width: 1240px;
+    max-width: 1340px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
     gap: 30px;
     margin-bottom: 100px;
     .services {
-        width: 330px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .heading {
-            margin: 20px 0 20px;
+        width: 310px;
+        height: 370px;
+        .box {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            color: $color-white;
+            background: #3a3f4e;
+            padding: 10px;
+            cursor: pointer;
+            box-shadow: 0px 5px 20px -2px rgb(97, 101, 143);
+            border-radius: 40px 20px 62px 10px;
+            -webkit-border-radius: 40px 20px 62px 10px;
+            -moz-border-radius: 40px 20px 62px 10px;
+            .heading {
+                color: $color-white;
+                font-weight: 600;
+            }
+            .description {
+                letter-spacing: 0.5px;
+                padding: 20px;
+                text-align: left;
+            }
         }
-        .description {
-            padding: 20px;
-            text-align: left;
+        .box:hover {
+            background: #2a2f3e;
         }
     }
 }

@@ -16,7 +16,10 @@
         height: fit-content;
         padding: 20px;
         border-radius: 10px;
-        background: #7286d3;
+        cursor: pointer;
+        background: #383d4e;
+        box-shadow: 0px 10px 20px -2px rgba(91, 97, 160, 1);
+
         @include max-sm {
             max-width: 310px;
             flex-direction: column;
@@ -35,6 +38,7 @@
                 border-radius: 5px;
             }
         }
+
         .itemOverlay {
             .cardHeading {
                 color: $color-white;
@@ -61,5 +65,8 @@
                 }
             }
         }
+    }
+    .item:hover {
+        background: #21242f;
     }
 }

@@ -16,11 +16,13 @@ const Offer: FC<Props & HTMLProps<HTMLDivElement>> = ({ services = servicesList,
         {Object.values(services).map(({ imgMiniature, heading, description }) => {
             return (
                 <div key={heading} className={style.services}>
-                    <div className={style.img}>{imgMiniature}</div>
-                    <Heading variant="h4" bold className={style.heading}>
-                        {heading}
-                    </Heading>
-                    <p className={style.description}>{description}</p>
+                    <div className={style.box}>
+                        <div className={style.img}>{imgMiniature}</div>
+                        <Heading variant="h4" bold className={style.heading}>
+                            {heading}
+                        </Heading>
+                        <p className={style.description}>{description}</p>
+                    </div>
                 </div>
             );
         })}
