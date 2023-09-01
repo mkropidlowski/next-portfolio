@@ -13,6 +13,9 @@
     }
     .subHeading {
         font-weight: 600;
+        @include max-sm {
+            max-width: 300px;
+        }
     }
 
     .description {

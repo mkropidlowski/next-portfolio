@@ -12,7 +12,7 @@
     box-shadow: $box-shadow-navbar;
     z-index: 50;
     transition: background 0.5s;
-    @include max-sm {
+    @include max-xl {
         height: fit-content;
         flex-direction: column;
         padding: 10px;
@@ -43,8 +43,8 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        gap: 30px;
-        @include max-sm {
+        gap: 15px;
+        @include max-xl {
             flex-direction: column;
             align-items: center;
             gap: 5px;
@@ -58,13 +58,13 @@
         margin: 0;
         padding: 0;
         gap: 10px;
-        @include max-sm {
+        @include max-xl {
             margin: 15px 0 15px;
         }
     }
     // ==== menu hover ==== //
 
-    @include max-sm {
+    @include max-xl {
         .socialLinksBox,
         .menu {
             display: none;
