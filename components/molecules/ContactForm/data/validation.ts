@@ -19,7 +19,7 @@ export const validationSchema = yup.object().shape({
         .trim()
         .matches(schema.emailRegex, "E-mail jest niezgodny.")
         .max(80, schema.max80Characters)
-        .min(5, "Minumum 5 znaków."),
+        .min(15, "Minumum 15 znaków."),
 
     message: yup
         .string()
