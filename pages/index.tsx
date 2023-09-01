@@ -3,6 +3,9 @@ import Section from "components/molecules/Section";
 import Hero from "components/organism/Hero";
 import { SectionsContent } from "config/sections/data";
 import { NextPage } from "next";
+import dynamic from "next/dynamic";
+
+const CookieBaner = dynamic(() => import("components/molecules/CookieBaner"), { ssr: false });
 
 const Home: NextPage = () => {
     return (
@@ -14,6 +17,7 @@ const Home: NextPage = () => {
             {SectionsContent.map(({ ...props }) => (
                 <Section key={props.id} {...props} />
             ))}
+            <CookieBaner />
         </PageLayout>
     );
 };
