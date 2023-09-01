@@ -18,6 +18,8 @@
         padding: 10px;
     }
     .logo {
+        position: relative;
+        left: -10px;
         margin: 20px 0 20px;
     }
 
@@ -26,7 +28,7 @@
         width: 22px;
         height: 30px;
         top: 28px;
-        right: 12px;
+        right: 15px;
         cursor: pointer;
         .bar {
             display: block;
