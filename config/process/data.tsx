@@ -20,7 +20,7 @@ export const ProcessMock: ProcessType[] = [
         stepNumber: "3",
         title: "Programujemy",
         description:
-            "Na podstawie grafik i treści programujemy Twoją stroną, wyświetlała się dobrze na każdym urządzeniu oraz spełniała ustalone wymagania.",
+            "Na podstawie grafik i treści programuje Twoją stronę, aby wyświetlała się dobrze na każdym urządzeniu oraz spełniała ustalone wymagania.",
     },
     {
         stepNumber: "4",
@@ -32,7 +32,7 @@ export const ProcessMock: ProcessType[] = [
         stepNumber: "5",
         title: "Akceptacja projektu",
         description:
-            "Jeszcze przed publikacją strony w sieci przekazuje Ci ostateczny projekt do wglądu i akceptacji, oraz zbieramy uwagi a następnie w razie potrzeby aktualizujemy projekt.",
+            "Jeszcze przed publikacją strony w sieci przekazuje Ci ostateczny projekt do wglądu i akceptacji, oraz zbieramy uwagi a następnie w razie potrzeby aktualizuje projekt.",
     },
     {
         stepNumber: "6",
