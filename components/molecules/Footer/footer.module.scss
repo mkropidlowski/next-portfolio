@@ -5,10 +5,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     background: #fcfcfc;
     margin-top: 100px;
+    padding: 15px;
+    gap: 20px;
     .heading {
         font-size: 15px;
-        padding: 15px;
+        cursor: pointer;
     }
 }
