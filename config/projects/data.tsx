@@ -21,7 +21,7 @@ export const projectsMockup: ProjectColumnProps[] = [
     {
         heading: "Szkoła językowa abcfc.pl",
         description:
-            "Projekt strony, przedstawiający ofertę szkoły językowej, na stronie znajdziemy formularz kontaktowy, mapkę dojazdu, czy sekcję informacyjną gdzie zarządzający ma mozliwości dodawania plików dla rodziców czy uczniów. .",
+            "Projekt strony, przedstawiający ofertę szkoły językowej, na stronie znajdziemy formularz kontaktowy, mapkę dojazdu, czy sekcję informacyjną gdzie zarządzający ma mozliwości dodawania plików dla rodziców czy uczniów.",
         buttonPrimary: "Source",
         buttonSecondary: "Live",
         sourceLink: "https://github.com/mkropidlowski/language-app",
@@ -31,7 +31,7 @@ export const projectsMockup: ProjectColumnProps[] = [
     {
         heading: "Portal turystyczny - projekt",
         description:
-            "Funkcjonalności: przeglądanie aktualnych atrakcji, panel logowania i rejestracji, mozliwość dodawania i usuwania atakcji.",
+            "Funkcjonalności: przeglądanie aktualnych atrakcji, panel logowania i rejestracji, możliwość dodawania i usuwania atrakcji.",
         buttonPrimary: "Source",
         buttonSecondary: "Live",
         sourceLink: "https://github.com/mkropidlowski/travel-app",
@@ -51,7 +51,7 @@ export const projectsMockup: ProjectColumnProps[] = [
     {
         heading: "Strona z ofertami pracy - projekt",
         description:
-            "Projekt tworzony w ramach nauki,  posiada funkcjonalności takie jak, tablice o ofertami po wybraniu kazdej z ofert porzechodzimy to szczegółowego opisu, dodatkowo opcja dodania nowej oferty oraz formularz kontaktowy.",
+            "Projekt tworzony w ramach nauki,  posiada funkcjonalności takie jak, tablice o ofertami po wybraniu kazdej z ofert przechodzimy to szczegółowego opisu, dodatkowo opcja dodania nowej oferty oraz formularz kontaktowy.",
         buttonPrimary: "Source",
         buttonSecondary: "Live",
         sourceLink: "https://github.com/mkropidlowski/jobs-portal",

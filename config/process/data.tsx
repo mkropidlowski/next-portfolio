@@ -9,7 +9,7 @@ export const ProcessMock: ProcessType[] = [
         stepNumber: "1",
         title: "Planujemy",
         description:
-            "Kontaktuje się z Tobą i przeprowadzamy wywiad, aby dobrze poznać potrzeby oraz ustalić wymagania projektowe",
+            "Kontaktuje się z Tobą i przeprowadzamy wywiad, aby dobrze poznać potrzeby oraz ustalić wymagania projektowe.",
     },
     {
         stepNumber: "2",
