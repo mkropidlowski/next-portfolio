@@ -23,7 +23,7 @@ const NavBar: FC<Props & HTMLProps<HTMLDivElement>> = ({
 }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
-    const isMobileDevice = useMediaQuery(BREAKPOINT["MAX-SM"]);
+    const isMobileDevice = useMediaQuery(BREAKPOINT["MAX-LG"]);
 
     useEffect(() => {
         if (isMobileDevice) {

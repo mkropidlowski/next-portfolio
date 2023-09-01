@@ -15,6 +15,10 @@ export const menuLinks = {
         id: "project",
         text: "Projekty",
     },
+    howWeWork: {
+        id: "howWeWork",
+        text: "Jak działamy?",
+    },
     offer: {
         id: "offer",
         text: "Usługi",

@@ -1,11 +1,12 @@
 import { Code } from "components/icons";
 import ContactForm from "components/molecules/ContactForm";
 import Offer from "components/molecules/Offer";
+import Process from "components/molecules/Process";
 import Projects from "components/molecules/Projects";
 import { SectionProps } from "components/molecules/Section/types";
 import { menuLinks } from "config/navbar/data";
 
-const { about, project, offer, contact } = menuLinks ?? {};
+const { about, project, offer, contact, howWeWork } = menuLinks ?? {};
 export const SectionsContent: SectionProps[] = [
     {
         id: about.id,
@@ -27,6 +28,15 @@ export const SectionsContent: SectionProps[] = [
             // columnHeading: "Przy współpracy z klientami udało się dotychczas zrealizować kilka projektów..",
         },
         visualContent: <Projects />,
+        shouldBeRow: true,
+    },
+    {
+        id: howWeWork.id,
+        heading: "Jak działamy?",
+        columnContent: {
+            subHeading: "Krok po kroku budujemy Twoją stronę",
+        },
+        visualContent: <Process />,
         shouldBeRow: true,
     },
     {

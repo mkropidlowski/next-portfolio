@@ -1,0 +1,56 @@
+@import "../../../styles//breakpoints.scss";
+
+.wrapper {
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+    .stepBox {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 300px;
+        @include max-sm {
+            gap: 0px;
+            height: auto;
+        }
+        .titleBox {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 15px;
+            height: 30px;
+            @include max-sm {
+                align-items: flex-start;
+            }
+            .stepNumber {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                width: 35px;
+                height: 35px;
+                background: rgb(247, 249, 251);
+                box-shadow: rgba(25, 48, 82, 0.1) 0px 25px 20px;
+                font-weight: 600;
+                @include max-sm {
+                    width: auto;
+                    height: auto;
+                }
+            }
+            .title {
+                height: 45px;
+                @include max-sm {
+                    height: 60px;
+                }
+            }
+        }
+    }
+    .description {
+        margin-top: 15px;
+        @include max-sm {
+        }
+    }
+}
