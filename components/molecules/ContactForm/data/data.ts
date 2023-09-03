@@ -2,6 +2,7 @@ export const formField = {
     name: "Imię i nazwisko",
     email: "Adres e-mail",
     text: "Twoja wiadomość",
+    phone: "Numer telefonu",
 };
 
 export type ResponseStatus = "pending" | "sent" | "error";
