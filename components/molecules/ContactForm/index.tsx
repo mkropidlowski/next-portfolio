@@ -68,16 +68,7 @@ const ContactForm: FC = () => {
                     />
                     <p className={style.errorText}>{errors.email?.message}</p>
                 </LabelText>
-                <LabelText>
-                    <input
-                        type="text"
-                        className={style.formInput}
-                        placeholder={formField.phone}
-                        {...register("phone")}
-                        data-cy="phoneNumber"
-                    />
-                    <p className={style.errorText}>{errors.email?.message}</p>
-                </LabelText>
+
                 <LabelText>
                     <textarea
                         className={style.formTextArea}
