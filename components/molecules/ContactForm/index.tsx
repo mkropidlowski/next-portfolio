@@ -11,7 +11,7 @@ import { validationSchema } from "./data/validation";
 import { ContactFormProps } from "./types";
 import { LabelText } from "components/atoms/Label";
 import ReCAPTCHA from "react-google-recaptcha";
-import { verifyCaptcha } from "actions/ServerActions";
+import { verifyCaptcha } from "pages/api/verifyCaptcha";
 import { publicEnvs } from "config/envs";
 
 const SITE_KEY = publicEnvs.RECAPTCHA_WEB_KEY;
