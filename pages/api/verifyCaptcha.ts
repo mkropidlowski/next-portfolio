@@ -1,10 +1,13 @@
-"use server";
+import { publicEnvs } from "config/envs";
+("use server");
 import axios from "axios";
+
+const SECRET_KEY = publicEnvs.RECAPTCHA_SECRET_KEY;
 
 export async function verifyCaptcha(token: string | null) {
     try {
         const res = await axios.post(
-            `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`
+            `https://www.google.com/recaptcha/api/siteverify?secret=${SECRET_KEY}&response=${token}`
         );
 
         if (res.data.success) {
