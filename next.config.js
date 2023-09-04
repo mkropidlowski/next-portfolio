@@ -12,4 +12,7 @@ module.exports = {
         unoptimized: true,
         domains: ["images.unsplash.com"],
     },
+    experimental: {
+        serverActions: true,
+    },
 };
