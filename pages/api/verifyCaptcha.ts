@@ -9,9 +9,7 @@ export async function verifyCaptcha(token: string | null) {
             `https://www.google.com/recaptcha/api/siteverify?secret=${SECRET_KEY}&response=${token}`,
             {
                 method: "POST",
-                headers: {
-                    "Access-Control-Allow-Origin": "*",
-                },
+                mode: "no-cors",
             }
         );
 

@@ -31,6 +31,7 @@ const ContactForm: FC = () => {
         register,
         handleSubmit,
         getValues,
+        reset,
         formState: { errors },
     } = useForm<ContactFormProps>({
         mode: "all",
@@ -47,6 +48,7 @@ const ContactForm: FC = () => {
         try {
             await sendContactForm(data);
             setResponseStatus("sent");
+            reset();
         } catch (error) {
             setResponseStatus("error");
         }
@@ -92,18 +94,17 @@ const ContactForm: FC = () => {
                     <p className={style.errorText}>{errors.message?.message}</p>
                 </LabelText>
 
-                <ReCAPTCHA sitekey={SITE_KEY} ref={recaptchaRef} onChange={handleCaptchaSubmission}>
-                    <Button
-                        color="primary"
-                        buttonSize="medium"
-                        type="submit"
-                        data-cy="submitFormButton"
-                        disabled={!isVerified}
-                        className={style.captchaBox}
-                    >
-                        {formStatusCode[responseStatus] ?? formStatusCode.default}
-                    </Button>
-                </ReCAPTCHA>
+                <Button
+                    color="primary"
+                    buttonSize="medium"
+                    type="submit"
+                    data-cy="submitFormButton"
+                    disabled={!isVerified}
+                    className={style.captchaBox}
+                >
+                    {formStatusCode[responseStatus] ?? formStatusCode.default}
+                </Button>
+                <ReCAPTCHA sitekey={SITE_KEY} ref={recaptchaRef} onChange={handleCaptchaSubmission} />
             </form>
             <div className={style.image}>
                 <Contact />
