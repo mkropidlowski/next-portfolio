@@ -6,6 +6,7 @@ import Hairdresser from "../projects/images/hairdresser.png";
 import TravelPortal from "../projects/images/travel.png";
 import Botricho from "../projects/images/botricho.png";
 import NewsPage from "../projects/images/newspage.png";
+import Adv from "../projects/images/adv.png";
 
 export const projectsMockup: ProjectColumnProps[] = [
     {
@@ -29,7 +30,17 @@ export const projectsMockup: ProjectColumnProps[] = [
         projectImg: <Image src={Languageapp} alt="ABCFC" style={{ objectFit: "contain" }} fill priority />,
     },
     {
-        heading: "Portal turystyczny - projekt",
+        heading: "Strona wycieczkowa - projekt",
+        description:
+            "Funkcjonalności: przeglądanie aktualnych wycieczek,rezerwowanie wycieczki, panel logowania, rejestracji, zarządzania, możliwość dodawania i usuwania wycieczek przez admina",
+        buttonPrimary: "Source",
+        buttonSecondary: "Live",
+        sourceLink: "https://github.com/mkropidlowski/travel-portal",
+        liveLink: "https://travel-portal-five.vercel.app/",
+        projectImg: <Image src={Adv} alt="Adv" style={{ objectFit: "contain" }} fill priority />,
+    },
+    {
+        heading: "Portal z atrakcjami - projekt",
         description:
             "Funkcjonalności: przeglądanie aktualnych atrakcji, panel logowania i rejestracji, możliwość dodawania i usuwania atrakcji.",
         buttonPrimary: "Source",
@@ -39,7 +50,7 @@ export const projectsMockup: ProjectColumnProps[] = [
         projectImg: <Image src={TravelPortal} alt="Travel Portal" style={{ objectFit: "contain" }} fill priority />,
     },
     {
-        heading: "Strona z newsami",
+        heading: "Strona z newsami - projekt",
         description:
             "Projekt tworzony w ramach nauki technologii front-endowych, dzięki własnemu API, użytkownik ma możliwość przeglądania wiadomości ze świata, wiadomości podzielone są równiez na kategorie tematyczne.",
         buttonPrimary: "Source",
