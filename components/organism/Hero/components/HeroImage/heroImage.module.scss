@@ -9,7 +9,23 @@
     right: 0;
     left: 0;
     opacity: 0.5;
+    overflow: hidden;
     @include max-sm {
         height: 450px;
+    }
+    .backgroundImg {
+        position: absolute;
+        animation: zoom 15s infinite ease-in-out alternate;
+    }
+}
+
+@keyframes zoom {
+    0%,
+    5% {
+        transform: scale(1);
+    }
+    95%,
+    100% {
+        transform: scale(1.3);
     }
 }
