@@ -13,7 +13,7 @@
     border: 0;
     line-height: 24px;
     font-size: 16px;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .small {
@@ -37,16 +37,13 @@
     }
 }
 
-.buttonDefault__Secondary {
-}
-
 .buttonDefault__Tertiary {
     background: transparent;
     font-weight: 600;
     &:hover {
         background: $color-blue;
         color: $color-white;
-        border-radius: 50px;
+        border-radius: 10px;
         transition: background 0.5s;
     }
 }

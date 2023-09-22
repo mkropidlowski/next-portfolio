@@ -10,8 +10,18 @@
     margin-top: 100px;
     padding: 15px;
     gap: 20px;
+    @include max-md {
+        flex-direction: column;
+    }
     .heading {
         font-size: 15px;
         cursor: pointer;
+    }
+    .contactHeading {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 }

@@ -9,10 +9,12 @@
         "sitemap": "next-sitemap --config next-sitemap.config.js",
         "lint": "next lint",
         "test:e2e": "npx cypress run",
+        "svgr": "npx @svgr/cli svg-icons --out-dir components/icons --icon --typescript  --ignore-existing ",
         "open": "npx cypress open"
     },
     "dependencies": {
         "@next/font": "13.1.4",
+        "@svgr/webpack": "^8.1.0",
         "@types/node": "18.11.18",
         "@types/react": "18.0.27",
         "@types/react-dom": "18.0.10",

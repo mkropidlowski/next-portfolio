@@ -14,7 +14,7 @@ export const SectionsContent: SectionProps[] = [
         columnContent: {
             columnHeading: "Junior Front-End Developer",
             description:
-                "Cześć, nazywam się Michał Kropidłowski, zajmuję się tworzeniem stron internetowych, blogów, portolio czy też małych aplikacji do zarządania zasobami w Twoim biznensie. Jeśli chcesz posiadać własną stronę WWW bedącą reklamą lub prezentacją Twojego biznesu, skontaktuj się ze mną w celu omówienia szczegółów.",
+                "Cześć, nazywam się Michał Kropidłowski, zajmuję się tworzeniem stron internetowych, blogów, portolio czy też małych aplikacji do zarządania zasobami w Twoim biznensie. Jeśli chcesz posiadać własną stronę WWW, która będzie wizytówką Twojego biznesu, skontaktuj się ze mną w celu omówienia szczegółów, użyj formularza, bądź zadzwoń pod numer podany na dole strony.",
             buttonPrimary: "Skontaktuj się poprzez formularz!",
             formHref: "#contact",
         },
